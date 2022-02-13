@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/container_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_5">
+
+        <TextView
+            android:id="@+id/txt_keyboard"
+            android:layout_margin="@dimen/dimen_5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/dialog_check_round"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_24">
+
+        </TextView>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/linear_backspace"
+            android:layout_margin="@dimen/dimen_5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60"
+            android:background="@drawable/dialog_backspace_round"
+            android:gravity="center">
+            <ImageView
+                android:padding="@dimen/dimen_8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/backspace">
+            </ImageView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

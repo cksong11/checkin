@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="customPrimaryDark">#0090D9</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTransparent45">#73000000</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dialog_transparent">#44000000</color>
+    <color name="dialog_dark_transparent">#66000000</color>
+    <color name="dialog_light_transparent">#33FFFFFF</color>
+    <color name="dialog_select_pin">#66FFFFFF</color>
+    <color name="pink">#FF5A5F</color>
+    <color name="light_green">#33FFBB</color>
+    <color name="dialog_dark_green">#00A5A0</color>
+    <color name="dark_gray">#555555</color>
+    <color name="black_gray">#3D3D3D</color>
+    <color name="light_gray">#F3F3F3</color>
+
+    <color name="btn_light_gray">#E0E0E0</color>
+
+    <color name="dark_green">#71C8AB</color>
+    <color name="border_text">#B3811E</color>
+    <color name="language_gradient_start">#F56037</color>
+    <color name="language_gradient_end">#F5365C</color>
+    <color name="edit">#FCDBE0</color>
+
+
+
+
+
+</resources>

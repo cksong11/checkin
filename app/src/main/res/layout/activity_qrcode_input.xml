@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop">
+
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/dimen_40"
+        android:orientation="vertical"
+        android:background="@color/dialog_transparent">
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_150"
+        android:layout_marginHorizontal="@dimen/dimen_30">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_qr_code"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_24">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_marginVertical="@dimen/dimen_20"
+            android:layout_marginHorizontal="@dimen/dimen_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_image_view"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/frame">
+                </ImageView>
+
+                <androidx.camera.view.PreviewView
+                    android:id="@+id/previewView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginVertical="@dimen/dimen_40"
+                    android:layout_marginHorizontal="@dimen/dimen_40"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="@color/dialog_select_pin"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/dimen_10"
+        android:paddingHorizontal="@dimen/dimen_20"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/dialog_dark_transparent"
+        >
+        <ImageView
+            android:id="@+id/img_back"
+            android:padding="@dimen/dimen_4"
+            android:layout_width="@dimen/dimen_28"
+            android:layout_height="@dimen/dimen_28"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24">
+
+        </ImageView>
+
+        <TextView
+            android:gravity="center"
+            android:text="@string/app_title"
+            android:textSize="@dimen/font_24"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/img_phone"
+            android:padding="@dimen/dimen_4"
+            android:layout_width="@dimen/dimen_32"
+            android:layout_height="@dimen/dimen_32"
+            android:src="@drawable/phone_call">
+
+        </ImageView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description_enter_qr_code"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:padding="@dimen/dimen_40">
+
+    </TextView>
+
+
+
+</RelativeLayout>

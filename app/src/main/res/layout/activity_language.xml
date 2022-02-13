@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/dimen_40"
+        android:orientation="vertical"
+        android:background="@color/dialog_transparent">
+        <TextView
+            android:paddingHorizontal="@dimen/dimen_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/welcome"
+            android:fontFamily="@font/norican"
+            android:textSize="@dimen/font_72">
+        </TextView>
+        <TextView
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/select_language_jp"
+            android:textSize="@dimen/font_21"
+            android:padding="@dimen/dimen_5">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/select_langauge_en"
+            android:textSize="@dimen/font_21"
+            android:padding="@dimen/dimen_5">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/select_langauge_cn"
+            android:textSize="@dimen/font_21"
+            android:padding="@dimen/dimen_5">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/select_langauge_ko"
+            android:textSize="@dimen/font_21"
+            android:padding="@dimen/dimen_5">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_japan"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_18"
+            android:background="@drawable/btn_language"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="日本語">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_english"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_18"
+            android:background="@drawable/btn_language"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="English">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_china"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_18"
+            android:background="@drawable/btn_language"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="简体中文">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_korea"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_18"
+            android:background="@drawable/btn_language"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="한글">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_20"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        >
+        <TextView
+            android:gravity="center"
+            android:text="@string/app_title"
+            android:textSize="@dimen/font_24"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
